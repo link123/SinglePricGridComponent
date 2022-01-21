@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan2: hsl(179, 62%, 43%, 0.8);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--LightGray);
+    font-weight: 400;
+}
+
+.container {
+    width: 312px;
+    padding: 0;
+    margin: 70px auto;
+    height: auto;
+}
+
+
+/* Join section */
+
+.join-container {
+    background-color: whitesmoke;
+    height: 265px;
+    padding: 25px;
+}
+
+.join-title {
+    color: var(--Cyan);
+    font-size: 1.5rem;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 38px;
+}
+
+.join-subtitle {
+    color: var(--BrightYellow);
+    font-size: 1rem;
+    margin-bottom: 31px;
+}
+
+.join-paragraph {
+    color: var(--GrayishBlue);
+    font-size: 17px;
+}
+
+
+/* Susbscription section */
+
+.subscription-container {
+    background-color: var(--Cyan);
+    color: whitesmoke;
+    height: 230px;
+    padding: 25px;
+}
+
+.susbs-title {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.price-container {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.price-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.price-letter {
+    align-self: center;
+    color: var(--LightGray);
+}
+
+.susbs-button {
+    background-color: var(--BrightYellow);
+    color: whitesmoke;
+    font-weight: 700;
+    width: 263px;
+    height: 48px;
+    border-radius: 7px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+
+/* US section */
+
+.usContainer {
+    background-color: var(--Cyan2);
+    color: var(--LightGray);
+    height: 230px;
+    padding: 25px;
+}
+
+.us-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* 1440px */
+
+@media only screen and (min-width:1440px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 635px;
+        height: 480px;
+        box-sizing: border-box;
+    }
+    .join-container {
+        grid-column: 1/13;
+        grid-row: 1/2;
+        height: 220px;
+        padding-left: 45px;
+    }
+    .subscription-container {
+        grid-column: 1/7;
+        grid-row: 2/3;
+        height: 260px;
+        width: 312px;
+        padding-left: 45px;
+    }
+    .usContainer {
+        grid-column: 7/13;
+        grid-row: 2/3;
+        height: 260px;
+        width: 312px;
+        padding-left: 45px;
+    }
+    .join-title {
+        margin-top: 45px;
+        font-size: 27px;
+    }
+    .susbs-title {
+        margin-top: 22px;
+    }
+    footer {
+        display: none;
+    }
+}
